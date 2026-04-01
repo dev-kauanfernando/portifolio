@@ -1,85 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauan Fernando - Portfólio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Kauan Fernando — Portifólio</title>
 </head>
 <body>
-
+    
     <header>
-        <h1>Kauan Fernando</h1>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
-
-    <main>
-        <section id="hero">
-            <img src="img/hero.webp" alt="Foto de Kauan">
-            <h2><span>Desenvolvedor</span> em formação</h2>
-            <p>Construindo soluções com Java e lógica de programação</p>
-        </section>
     
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-            <p>
-                 Me chamo Kauan Fernando, tenho 19 anos, atualmente estou cursando o curso técnico em Desenvolvimento de Sistemas. Construi alguns mini projetos dentro do curso, como um robô autônomo junto a minha equipe utilizando a linguagem em arduino e alguns sistemas de cadastro simples como temas como produtos, pedidos de restaurante e matricula escolar utilizando C e Java.
-            </p>
+    <main>    
+        <div id="home" class="hero">
+            <div class="hero-img">
+                <img src="img/hero.webp" alt="Foto de Kauan">
+            </div>
+            
+            <div class="hero-text">
+                <h3>Olá, me chamo</h3>
+                <h1>Kauan Fernando</h1>
+                <h2>sou um <span>Desenvolvedor</span> em formação</h2>
+            </div>
+        </div>
+        
+        <section class="about-me">
+            <h2 class="section-title"><span>></span> Sobre mim</h2>
+            <p>Me chamo Kauan Fernando, tenho 19 anos, atualmente estou cursando o curso técnico em Desenvolvimento de Sistemas. Construi alguns mini projetos dentro do curso, como um robô autônomo junto a minha equipe utilizando a linguagem em arduino e alguns sistemas de cadastro simples como temas como produtos, pedidos de restaurante e matricula escolar utilizando C e Java.</p>
         </section>
         
-        <section id="skills">
-            <h2>Habilidades</h2>
+        <section id="skills"class="skills">
+            <h2 class="section-title"><span>></span> Habilidades</h2>
             
-            <div class="lista-skill">
+            <div class="container">
+                <div class="skill">
+                    <i class="devicon-c-plain colored"></i>
+                </div>
+                
                 <div class="skill">
                     <i class="devicon-java-plain colored"></i>
                 </div>
                 
                 <div class="skill">
-                    <i class="devicon-c-plain colored"></i>
-                </div>
-            </div>
-        </section>
-    
-        <section id="projetos">
-            <h2>Projetos</h2>
-            
-            <div class="lista-projetos">
-                <div class="projeto">
-                    <h3>Sistema de Estacionamento</h3>
-                    <p>Projeto em Java utilizando POO para gerenciar veículos, algumas de suas funcões sendo <span>estacionar</span> e <span>gerar o valor a ser pago</span>.</p>
-                    <a href="https://github.com/dev-kauanfernando/estacionamento-de-carros" target="_blank" class="btn">
-                        Ver projeto
-                    </a>
-                </div>
-                
-                <div class="projeto">
-                    <h3>Sistema de Cadastro de Produtos</h3>
-                    <p>Projeto em Java com a finalidade de cadastro e armazenamento de produtos. Com opções de <span>cadastrar</span>,  <span>listar</span>, <span>atualizar</span> e <span>remover</span>.</p>
-                    <a href="https://github.com/dev-kauanfernando/sistema-de-cadastro-de-produtos" target="_blank" class="btn">
-                        Ver projeto
-                    </a>
-                </div>
-                
-                <div class="projeto">
-                    <h3>Jogo da forca</h3>
-                    <p>Jogo da forca com funções de <span>criar palavra própria</span> ou usar palavras pré-cadastradas no código. Projeto desenvolvido usando a linguagem C</p>
-                    <a href="https://github.com/dev-kauanfernando/jogo-da-forca" target="_blank" class="btn">
-                        Ver projeto
-                    </a>
+                    <i class="devicon-python-plain colored"></i>
                 </div>
             </div>
         </section>
         
-        <section id="contato">
-            <h2>Contato</h2>
+        <section id="projects" class="projects">
+            <h2 class="section-title"><span>></span> Projetos</h2>
+            
+            <div class="container">
+                <div class="project">
+                    <h3>Sistema de Estacionamento</h3>
+                    <p>Prática em Java utilizando POO para gerenciar veículos, algumas de suas funcões sendo <span>estacionar</span> e <span>gerar o valor a ser pago</span>.</p>
+                    <a href="https://github.com/dev-kauanfernando/estacionamento-de-carros" target="_blank" class="btn">Visualizar</a>
+                </div>
+                
+                <div class="project">
+                    <h3>Sistema de Cadastro de Produtos</h3>
+                    <p>Prática em Java com a finalidade de cadastro e armazenamento de produtos. Com opções de <span>cadastrar</span>,  <span>listar</span>, <span>atualizar</span> e <span>remover</span>.</p>
+                    <a href="https://github.com/dev-kauanfernando/sistema-de-cadastro-de-produtos" target="_blank" class="btn">Visualizar</a>
+                </div>
+                
+                <div class="project">
+                    <h3>Jogo da forca</h3>
+                    <p>Jogo da forca com funções de <span>criar palavra própria</span> ou usar palavras pré-cadastradas no código. Prática desenvolvida usando a linguagem C.</p>
+                    <a href="https://github.com/dev-kauanfernando/jogo-da-forca" target="_blank" class="btn">Visualizar</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2 class="section-title"><span>></span> Contato</h2>
             <div class="social">
                 <a href="https://github.com/dev-kauanfernando" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github"></i>
@@ -94,11 +99,12 @@
                 </a>
             </div>
         </section>
+        
     </main>
-
+    
     <footer>
         <p>© 2026 - Kauan Fernando M. Pinto</p>
     </footer>
-
+    
 </body>
 </html>
